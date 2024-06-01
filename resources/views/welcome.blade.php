@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{ asset('assets/bootstrap-5.3.3-dist/css/bootstrap.min.css') }}">
 </head>
 <body>
-    <h1>Halo</h1>
+    <h1>Halo Dunia</h1>
 </body>
 <script src="{{ asset('assets/bootstrap-5.3.3-dist/js/bootstrap.min.js')}}"></script>
 </html>
