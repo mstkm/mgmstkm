@@ -107,6 +107,10 @@ a>li.active {
     height: 80px;
 }
 
+.bg-tech {
+    background-color: #4d4b4b;
+}
+
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .h-main {

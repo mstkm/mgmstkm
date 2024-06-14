@@ -96,7 +96,7 @@
             <!-- Main -->
             <main class="col p-main d-flex flex-column gap-3 gap-lg-5 h-main scrollable">
                 <section id="about" class="track-element">
-                    <h4 class="mb-lg-3">About</h4>
+                    <h4 class="mb-lg-3 bg-black text-white px-3 py-2">About</h4>
                     <div>
                         <p>I am a Full Stack Developer with more than 1 year of experience in developing web applications. I have skills in various technologies, including PHP (Laravel), JavaScript (React.js, Node.js), and databases (MySQL, PostgreSQL and MongoDB). I am very enthusiastic about continuing to learn new technologies so that my abilities continue to improve.</p>
                         <p>Over the course of my career, I have completed a variety of projects, all of which focused on optimal user experience and high performance.</p>
@@ -104,7 +104,7 @@
                     </div>
                 </section>
                 <section id="experience" class="track-element">
-                    <h4 class="mb-lg-3">Experience</h4>
+                    <h4 class="mb-lg-3 bg-black text-white px-3 py-2">Experience</h4>
                     <div class="d-flex flex-column gap-3">
                         <div class="wrapper">
                             <a href="https://web.globalservice.co.id/" target="_blank" class="text-black">
@@ -119,13 +119,13 @@
                                 <li>Optimize application performance to ensure fast response and efficiency in data management.</li>
                             </ul>
                             <div class="d-flex gap-1 flex-wrap">
-                                <div class="bg-black rounded text-white px-3 py-1 w-fit text-nowrap">Laravel</div>
-                                <div class="bg-black rounded text-white px-3 py-1 w-fit text-nowrap">jQuery</div>
-                                <div class="bg-black rounded text-white px-3 py-1 w-fit text-nowrap">Boostrap</div>
-                                <div class="bg-black rounded text-white px-3 py-1 w-fit text-nowrap">ReactJS</div>
-                                <div class="bg-black rounded text-white px-3 py-1 w-fit text-nowrap">NodeJS</div>
-                                <div class="bg-black rounded text-white px-3 py-1 w-fit text-nowrap">MySQL</div>
-                                <div class="bg-black rounded text-white px-3 py-1 w-fit text-nowrap">SQL Server</div>
+                                <div class="bg-tech rounded text-white px-3 py-1 w-fit text-nowrap">Laravel</div>
+                                <div class="bg-tech rounded text-white px-3 py-1 w-fit text-nowrap">jQuery</div>
+                                <div class="bg-tech rounded text-white px-3 py-1 w-fit text-nowrap">Boostrap</div>
+                                <div class="bg-tech rounded text-white px-3 py-1 w-fit text-nowrap">ReactJS</div>
+                                <div class="bg-tech rounded text-white px-3 py-1 w-fit text-nowrap">NodeJS</div>
+                                <div class="bg-tech rounded text-white px-3 py-1 w-fit text-nowrap">MySQL</div>
+                                <div class="bg-tech rounded text-white px-3 py-1 w-fit text-nowrap">SQL Server</div>
                             </div>
                         </div>
                         <div class="wrapper">
@@ -139,16 +139,16 @@
                                 <li>Troubleshooting and debugging to resolve technical problems that arise in the application.</li>
                             </ul>
                             <div class="d-flex gap-1 flex-wrap">
-                                <div class="bg-black rounded text-white px-3 py-1 w-fit text-nowrap">Laravel</div>
-                                <div class="bg-black rounded text-white px-3 py-1 w-fit text-nowrap">jQuery</div>
-                                <div class="bg-black rounded text-white px-3 py-1 w-fit text-nowrap">Boostrap</div>
-                                <div class="bg-black rounded text-white px-3 py-1 w-fit text-nowrap">PostgreSQL</div>
+                                <div class="bg-tech rounded text-white px-3 py-1 w-fit text-nowrap">Laravel</div>
+                                <div class="bg-tech rounded text-white px-3 py-1 w-fit text-nowrap">jQuery</div>
+                                <div class="bg-tech rounded text-white px-3 py-1 w-fit text-nowrap">Boostrap</div>
+                                <div class="bg-tech rounded text-white px-3 py-1 w-fit text-nowrap">PostgreSQL</div>
                             </div>
                         </div>
                     </div>
                 </section>
                 <section id="certificate" class="track-element">
-                    <h4 class="mb-lg-3">Certificate</h4>
+                    <h4 class="mb-lg-3 bg-black text-white px-3 py-2">Certificate</h4>
                     <div>
                         <div class="wrapper">
                             <a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=0124680806MM" target="_blank" class="text-black">
