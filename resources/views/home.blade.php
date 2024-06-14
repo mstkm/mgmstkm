@@ -134,7 +134,7 @@
                             </a>
                             <p>May - June 2023</p>
                             <ul>
-                                <li>Develop and maintain web-based CRM applications used by companies to manage relationships with customers.</li>
+                                <li>Develop web-based CRM applications used by companies to manage relationships with customers.</li>
                                 <li>Work with the team in developing scalable and maintainable applications.</li>
                                 <li>Troubleshooting and debugging to resolve technical problems that arise in the application.</li>
                             </ul>
