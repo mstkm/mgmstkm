@@ -95,7 +95,7 @@
 
             <!-- Main -->
             <main class="col p-main d-flex flex-column gap-3 gap-lg-5 h-main scrollable">
-                <section id="about">
+                <section id="about" class="track-element">
                     <h4 class="mb-lg-3">About</h4>
                     <div>
                         <p>I am a Full Stack Developer with more than 1 year of experience in developing web applications. I have skills in various technologies, including PHP (Laravel), JavaScript (React.js, Node.js), and databases (MySQL, PostgreSQL and MongoDB). I am very enthusiastic about continuing to learn new technologies so that my abilities continue to improve.</p>
@@ -103,7 +103,7 @@
                         <p>Based on my background and passion for continuing to learn and develop, I am confident that I can make a positive and significant contribution.</p>
                     </div>
                 </section>
-                <section id="experience">
+                <section id="experience" class="track-element">
                     <h4 class="mb-lg-3">Experience</h4>
                     <div class="d-flex flex-column gap-3">
                         <div class="wrapper">
@@ -147,7 +147,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="certificate">
+                <section id="certificate" class="track-element">
                     <h4 class="mb-lg-3">Certificate</h4>
                     <div>
                         <div class="wrapper">
@@ -210,11 +210,45 @@
         });
 
         $('a').on('click', function() {
-            console.log($(this))
             $(".list").removeClass();
             $(".list").addClass("list");
             $(this).children().removeClass();
             $(this).children().addClass("active list");
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const elements = document.querySelectorAll('.track-element');
+
+        const ids = [];
+        elements.forEach(element => ids.push(element.getAttribute("id")))
+        const observerOptions = {
+            root: null, // menggunakan viewport sebagai root
+            rootMargin: '0px',
+            threshold: 0.8
+        };
+
+        let inId = '';
+        const observerCallback = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    inId = id;
+                }
+            });
+
+            $(`a[href="#${inId}"]`).children().addClass("active list");
+            ids.forEach(id => {
+                if (id !== inId) {
+                    $(`a[href="#${id}"]`).children().removeClass()
+                }
+            })
+        };
+
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+        elements.forEach(element => {
+            observer.observe(element);
         });
     });
 </script>
