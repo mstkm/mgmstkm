@@ -23,7 +23,7 @@
                     </div>
                     <nav>
                         <ul>
-                            <a href="#about"><li class="active list">About</li></a>
+                            <a href="#about"><li class="list">About</li></a>
                             <a href="#experience"><li class="list">Experience</li></a>
                             <a href="#certificate"><li class="list">Certificate</li></a>
                         </ul>
