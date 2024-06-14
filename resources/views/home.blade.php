@@ -98,7 +98,7 @@
                 <section id="about" class="track-element">
                     <h4 class="mb-lg-3 bg-black text-white px-3 py-2">About</h4>
                     <div>
-                        <p>I am a Full Stack Developer with more than 1 year of experience in developing web applications. I have skills in various technologies, including PHP (Laravel), JavaScript (React.js, Node.js), and databases (MySQL, PostgreSQL and MongoDB). I am very enthusiastic about continuing to learn new technologies so that my abilities continue to improve.</p>
+                        <p>I am a Full Stack Developer with more than 1 year of experience in developing web applications. I have skills in various technologies, including PHP (Laravel), JavaScript (React.js, Node.js), and databases (MySQL, PostgreSQL and MongoDB). I am very enthusiastic about continuing to learn new technologies so that my skills continue to improve.</p>
                         <p>Over the course of my career, I have completed a variety of projects, all of which focused on optimal user experience and high performance.</p>
                         <p>Based on my background and passion for continuing to learn and develop, I am confident that I can make a positive and significant contribution.</p>
                     </div>
