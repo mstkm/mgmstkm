@@ -210,46 +210,50 @@
         });
 
         $('a').on('click', function() {
-            $(".list").removeClass();
-            $(".list").addClass("list");
-            $(this).children().removeClass();
-            $(this).children().addClass("active list");
-        });
-    });
-
-    document.addEventListener("DOMContentLoaded", () => {
-        const elements = document.querySelectorAll('.track-element');
-
-        const ids = [];
-        elements.forEach(element => ids.push(element.getAttribute("id")))
-        const observerOptions = {
-            root: null, // menggunakan viewport sebagai root
-            rootMargin: '0px',
-            threshold: 0.8
-        };
-
-        let inId = '';
-        const observerCallback = (entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const id = entry.target.getAttribute('id');
-                    inId = id;
-                }
+            $(window).breakpoints('inside', 'lg', function() {
+                $(".list").removeClass();
+                $(".list").addClass("list");
+                $(this).children().removeClass();
+                $(this).children().addClass("active list");
             });
-
-            $(`a[href="#${inId}"]`).children().addClass("active list");
-            ids.forEach(id => {
-                if (id !== inId) {
-                    $(`a[href="#${id}"]`).children().removeClass()
-                }
-            })
-        };
-
-        const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-        elements.forEach(element => {
-            observer.observe(element);
         });
     });
+
+    if (window.matchMedia('(min-width: 992px)').matches) {
+        document.addEventListener("DOMContentLoaded", () => {
+            const elements = document.querySelectorAll('.track-element');
+
+            const ids = [];
+            elements.forEach(element => ids.push(element.getAttribute("id")))
+            const observerOptions = {
+                root: null, // menggunakan viewport sebagai root
+                rootMargin: '0px',
+                threshold: 0.8
+            };
+
+            let inId = '';
+            const observerCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        inId = id;
+                    }
+                });
+
+                $(`a[href="#${inId}"]`).children().addClass("active list");
+                ids.forEach(id => {
+                    if (id !== inId) {
+                        $(`a[href="#${id}"]`).children().removeClass()
+                    }
+                })
+            };
+
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    }
 </script>
 </html>

@@ -40,13 +40,13 @@ a>li {
     transition: background-size 0.4s, color 0.4s;
 }
 
-a>li:hover {
+a>li.active {
     --p: 100%;
     background-size: 100% 100%;
     color: #fff;
 }
 
-a>li.active {
+a>li:active {
     --p: 100%;
     background-size: 100% 100%;
     color: #fff;
@@ -113,6 +113,12 @@ a>li.active {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    a>li:hover {
+        --p: 100%;
+        background-size: 100% 100%;
+        color: #fff;
+    }
+
     .h-main {
         min-height: 100vh !important;
     }
